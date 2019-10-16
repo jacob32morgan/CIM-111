@@ -1,0 +1,218 @@
+
+
+      header{
+
+        background-color: orange;
+
+        width: 920px; /* remember to adjust the width according to the padding */
+
+        /* height: 100px; */
+
+        height: auto;
+
+        padding: 20px 20px 20px 20px; /* top right bottom left */
+
+
+
+        border-width: 5px 5px 5px 5px; /* top right bottom left */
+
+        border-color: black;
+
+        border-style: solid;
+
+
+
+        margin: 0 auto; /* top and bottom, right and left */
+
+        margin-top: -10px; /* negative numbers can be used to close gaps */
+
+
+      }
+
+      main{
+
+        background-color: orange;
+
+        width: 920px;
+
+        /* height: 100px; */
+
+        height: auto;
+
+        /* height: auto; allows the container to grow depending on content */
+
+
+
+        padding: 20px; /* adjusts all sides*/
+
+        padding-top: 20px;
+
+        padding-right: 20px;
+
+        padding-bottom: 20px;
+
+        padding-left: 20px;
+
+
+
+        border-width: 5px; /* adds border on all sides */
+
+        border-style: dashed;
+
+        border-color: black;
+
+
+
+        margin-top: 10px;
+
+        margin-right: auto;
+
+        margin-bottom: 20px;
+
+        margin-left: auto;
+
+
+
+      }
+
+      footer{
+
+        background-color: orange;
+
+        width: 960px;
+
+        height: 50px;
+
+        /* if height is set to auto and the container has no content the box will collapse and not appear */
+
+        margin: 0 auto;
+
+        border-width: 5px 5px 5px 5px; /* top right bottom left */
+
+        border-color: black;
+
+        border-style: solid;
+
+        text-align: center;
+
+
+
+      }
+
+
+
+      nav{
+
+        background-color: orange;
+
+        width: 320px;
+
+        margin: 0 auto;
+
+
+
+        border-width: 5px; /* adds border on all sides */
+
+        border-style: dashed;
+
+        border-color: black;
+
+      }
+
+
+
+      nav ul{
+
+
+
+      }
+
+
+
+      nav ul li{
+
+        list-style: none;
+
+        display: inline-block;
+
+        margin-right: 20px;
+
+        padding: 5px;
+
+      }
+
+
+
+      nav ul li a{
+
+        color: white;
+
+        text-decoration: none;
+
+      }
+
+
+
+      nav ul li:hover{
+
+        background-color: gray;
+
+      }
+
+
+
+      #grid1{
+        width: 920px;
+        height: auto;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 150px;
+        grid-template-columns: 100px 800px;
+        grid-column-gap: 20px;
+        /* top right bottom left */
+        border-width: 0px 0px 10px 0px;
+        border-style: solid;
+        font-size: 25px;
+      }
+
+      #grid1 img{
+        width: 250px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      #grid2{
+        width: 920px;
+        height: auto;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 475px;
+        grid-template-columns:266px 266px 266px;
+        grid-column-gap: 20px;
+        border-width: 0px 0px 10px 0px;
+        border-style: solid;
+      }
+
+      #grid2 img{
+        width: 266px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      #grid3{
+        width: 920px;
+        height: auto;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 475px;
+        grid-template-columns:266px 266px 266px;
+        grid-column-gap: 20px;
+        border-width: 0px 0px 10px 0px;
+        border-style: solid;
+        }
+
+        #grid3 img{
+          width: 250px;
+          display: block;
+          margin: 0 auto;
+        }
