@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>How to make Fettuccine Alfredo</title>
+
+    <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
+
+
+
+    <style media="screen">
+
+    /* Home Screen */
+
+    #div0{
+      background-color: white;
+      background-image: url(Images/plainfett.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 300px;
+    }
+
+    #menu1{
+      text-align: center;
+      padding-bottom: 300px;
+    }
+
+    #menu2{
+      text-align: center;
+    }
+
+    /* Section 1 */
+      .grid1{
+        display: block;
+        grid-template-rows: 1fr 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      #div1{
+        background-color: darkred;
+      }
+
+      #step1toggle{
+        text-align: center;
+        color: white;
+      }
+
+      #title1{
+        text-align:center;
+        color: white;
+      }
+
+      #section1{
+        text-align: center;
+        color: white
+      }
+
+      #section1 img{
+        margin: 0 auto;
+        width: 250px;
+      }
+
+  /* Section 2 */
+
+  #div2{
+    background-color: lightblue;
+  }
+
+  #div2 img{
+    margin: auto 0;
+    width: 500px;
+  }
+
+  .grid2{
+    display: block;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    color: black;
+  }
+
+  #title2{
+    text-align: center;
+    color: black;
+  }
+
+  /* Section 3 */
+
+  #div3{
+    background-color: black;
+  }
+
+  #title3{
+    text-align: center;
+    color: #F47321;
+  }
+
+  #section3{
+    text-align: center;
+    color: #F47321;
+  }
+
+  #section3 img{
+    width: 500px;
+    margin: 0 auto;
+  }
+
+   /* Section 4 */
+
+   #div4{
+     background-image: linear-gradient(to bottom right, purple, black);
+   }
+
+   #title4{
+     text-align: center;
+     color: white;
+   }
+
+   #section4{
+     text-align: center;
+     color: white;
+   }
+
+   #section4 img{
+     width: 200px;
+     margin: 0 auto;
+   }
+
+    </style>
+
+  </head>
+  <body>
+<div id="pagepiling">
+
+
+  <!-- home page Div -->
+  <div class="section" id="div0">
+
+    <h1 id="menu1">How to make Fettuccine Alfredo</h1>
+    <h1 id="menu2">Scroll to find out!</h1>
+
+  </div>
+
+  <!-- First Div -->
+
+
+	<div class="section" id="div1">
+
+  <h1 id="step1toggle">Step 1</h1>
+
+  <section class="grid1" id="section1">
+    <h2>Boil Water</h2>
+    <p>Allow water to come to a strong boil</p>
+    <p>IF YOU DONT USE SALT, IT WILL TASTE BAD</p>
+    <img src="Images/water.jpg" alt="Boiling Water">
+  </div>
+
+  <!-- Second Div -->
+
+	<div class="section" id="div2">
+    <h1 id="title2">Step 2</h1>
+
+
+    <section class="grid2" id="section2">
+      <img id="step2click" src="Images/boilfett.jpg" alt="Boiling Pasta">
+      <h2>Place fettuccine in the boiling water</h2>
+      <p>Stir ever minute or so to prevent pasta form sticking</p>
+      <p>Allow fettuccine to boil for 10-12 minutes</p>
+
+  </section>
+
+</div>
+
+<!-- Third Div -->
+
+	<div class="section" id="div3">
+
+    <h1 id="title3">Step 3</h1>
+
+  <section class="grid3" id="section3">
+    <img src="Images/strainfett.jpg" alt="Strain Pasta">
+    <h2>Take fettuccine out of water and strain</h2>
+    <p>Allow pasta to dry for a minute</p>
+
+  </section>
+  </div>
+
+  <!-- Fourth Div -->
+
+	<div class="section" id="div4">
+    <h1 id="title4">Step 4</h1>
+
+    <section class="grid4" id="section4">
+      <img src="Images/fettalf.jpg" alt="Mix the Alfredo">
+      <h2>Add the alfredo suace with the pasta!</h2>
+      <p>Keep stove on low to keep fettuccine alfredo warm!</p>
+
+
+
+
+   </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+
+	$('#pagepiling').pagepiling();
+
+  $("#section1").hide();
+
+  $("#step1toggle").click(function(){
+    $("#section1").slideToggle(1000)
+  });
+
+  $("#section2").hide();
+
+  $("#title2").click(function(){
+    $("#section2").slideToggle(1000)
+  });
+
+  $("#section3").hide();
+
+  $("#title3").click(function(){
+    $("#section3").slideToggle(1000)
+  });
+
+  $("#section4").hide();
+
+  $("#title4").click(function(){
+    $("#section4").slideToggle(1000)
+  });
+
+  $("#menu1").html("HOW TO MAKE FETUCCINE ALFREDO");
+
+  $("#menu2").css("color","black")
+
+
+
+
+
+});
+    </script>
+
+
+  </body>
+</html>
