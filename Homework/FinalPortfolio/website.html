@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Creating a safe space for giraffes</title>
+
+    <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
+
+
+
+    <style media="screen">
+
+    /* Home Screen */
+
+
+    #div0{
+      background-color: white;
+      background-image: url(Images/mamagiraffe.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 300px;
+  }
+
+    #menu1{
+      text-align: center;
+      padding-bottom: 300px;
+    }
+
+    #menu2{
+      text-align: center;
+    }
+
+    #section0 img{
+      width: 200px;
+      margin: 0 auto;
+    }
+
+
+
+    /* Section 1 */
+      .grid1{
+        display: block;
+        grid-template-rows: 1fr 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      #div1{
+        background-color: black;
+      }
+
+      #step1toggle{
+        text-align: center;
+        color: #F47321;
+      }
+
+      #title1{
+        text-align:center;
+        color: #F47321;
+      }
+
+      #section1{
+        text-align: center;
+        color: #F47321;
+      }
+
+      #section1 img{
+        margin: 0 auto;
+        width: 350px;
+      }
+
+  /* Section 2 */
+
+  #div2{
+    background-color: black;
+  }
+
+  #div2 img{
+    margin: auto 0;
+    width: 500px;
+  }
+
+  .grid2{
+    display: block;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    color: #F47321;
+  }
+
+  #title2{
+    text-align: center;
+    color: #F47321;
+  }
+
+  /* Section 3 */
+
+  #div3{
+    background-color: black;
+  }
+
+  #title3{
+    text-align: center;
+    color: #F47321;
+  }
+
+  #section3{
+    text-align: center;
+    color: #F47321;
+  }
+
+  #section3 img{
+    width: 200px;
+    margin: 0 auto;
+  }
+
+   /* Section 4 */
+
+   #div4{
+     background-image: linear-gradient(to bottom right, orange, red);
+   }
+
+   #title4{
+     text-align: center;
+     color: white;
+   }
+
+   #section4{
+     text-align: center;
+     color: white;
+   }
+
+   #section4 img{
+     width: 350px;
+     margin: 0 auto;
+   }
+
+    </style>
+
+  </head>
+  <body>
+<div id="pagepiling">
+
+
+  <!-- home page Div -->
+  <div class="section" id="div0">
+
+    <h1 id="menu1">Creating a safe space for giraffes!</h1>
+
+    <h1 id="menu2">Scroll down to learn more.</h1>
+
+
+  </div>
+
+  <!-- First Div -->
+
+
+	<div class="section" id="div1">
+
+  <h1 id="step1toggle">Giraffe organization</h1>
+
+  <section class="grid1" id="section1">
+    <h2>Find a small group of people who are passionate!</h2>
+    <p>Although organizations like the WWF and AWF are great, they don't focus on a certian species of animals.</p>
+    <p>Making a small group is better than no group at all!</p>
+    <img src="Images/giraffegroup.jpg" alt="Giraffe Group">
+  </div>
+
+  <!-- Second Div -->
+
+	<div class="section" id="div2">
+    <h1 id="title2">Cancelling Poaching</h1>
+
+
+    <section class="grid2" id="section2">
+      <img id="step2click" src="Images/poaching.jpg" alt="Poaching">
+      <h2>Poaching is a leading cause for giraffe endangerment!</h2>
+      <p>Hunting an animal like a giraffe doesn't make sense considering they are the opposite of overpopulated.</p>
+      <p>IF THE POACHING DOESN'T STOP, THEY WILL EVENTUALLY BE EXTINCT</p>
+
+  </section>
+
+</div>
+
+<!-- Third Div -->
+
+	<div class="section" id="div3">
+
+    <h1 id="title3">Supporting Preservations</h1>
+
+  <section class="grid3" id="section3">
+    <img src="Images/gcf.jpg" alt="GCF">
+    <h2>Supporting these can save their lives!</h2>
+    <p>Wildlife preservations are a main factor in maintaining any endangered species.</p>
+    <p>An amazing organization that works with the conservation of giraffes and places them in a safe location is the Giraffe Conservation Foundation.</p>
+    <p>PLEASE CONSIDER DONATING TO THEM!</p>
+
+  </section>
+  </div>
+
+  <!-- Fourth Div -->
+
+	<div class="section" id="div4">
+    <h1 id="title4">Take Action</h1>
+
+    <section class="grid4" id="section4">
+      <img src="Images/icegiraffe.jpg" alt="Ice Giraffe">
+      <h2>The only way change can happen is by taking action!</h2>
+      <p>No matter how big or small, doing something to prtoect giraffes and avoiding extinction is the main goal.</p>
+      <p>All help is appreciated!</p>
+
+
+
+
+   </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <script type="text/javascript" src="jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+
+    $('#pagepiling').pagepiling();
+
+    $("#section1").hide();
+
+    $("#step1toggle").click(function(){
+    $("#section1").slideToggle(1000)
+    });
+
+    $("#section2").hide();
+
+    $("#title2").click(function(){
+    $("#section2").slideToggle(1000)
+    });
+
+    $("#section3").hide();
+
+    $("#title3").click(function(){
+    $("#section3").slideToggle(1000)
+    });
+
+    $("#section4").hide();
+
+    $("#title4").click(function(){
+    $("#section4").slideToggle(1000)
+    });
+
+    $("#menu1").html("Creating a safe space for giraffes!");
+
+    $("#menu2").css("color","black")
+
+
+
+
+
+    });
+    </script>
+
+
+
+
+  </body>
+</html>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152882507-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-152882507-1');
+</script>
+
+</body>
+</html>
